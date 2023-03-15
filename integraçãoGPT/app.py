@@ -1,5 +1,9 @@
 from chatgptonic import ChatGPT
 
-chat = ChatGPT('###')
-response = chat.just_chat("quantas vezes o vasco caiu pra segunda divisão")
-print(response)
+
+if __name__ == '__main__':
+    chat = ChatGPT('###')
+    # response = chat.just_chat("Ola")
+    # response = chat.send("quantas vezes o vasco caiu pra segunda divisão")
+    # print(response)
+    chat.start_interactive_chat()
